@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+	<head>
+		<title>What is host IP? exercise</title>
+	</head>
+
+<body>
+
+	<h1>Welcome to IP Whitelisting Tool</h1>
+	<p>This tool is used to collect the host's IP so that we can add identify it for whitelisting. Depending on how we grab this value, it can be displayed differently.</p>
+
+<p>
+<b>Client IP: {{ip}}</b>
+<br>This method attempts to pull the client IP regardless if behind proxy using the OS and environment.</br>
+</p>
+<p>
+<b>Flask Server IP: {{ip2}}</b>
+<br>This method simply calls upon a public AWS host used to check IPs. Returned IP is that of the Flask server via calling an AWS endpoint.</br>
+</p>
+</body>
+
+	</html>
